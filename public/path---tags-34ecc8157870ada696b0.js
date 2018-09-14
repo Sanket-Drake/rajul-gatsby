@@ -1,2 +1,0 @@
-webpackJsonp([55702396619907],{333:function(t,a){t.exports={data:{site:{siteMetadata:{title:"Gatsby + Netlify CMS Starter"}},allMarkdownRemark:{group:[{fieldValue:"brewing",totalCount:1},{fieldValue:"chemex",totalCount:1},{fieldValue:"flavor",totalCount:3},{fieldValue:"green beans",totalCount:2},{fieldValue:"jamaica",totalCount:2},{fieldValue:"tasting",totalCount:3}]}},pathContext:{}}}});
-//# sourceMappingURL=path---tags-34ecc8157870ada696b0.js.map

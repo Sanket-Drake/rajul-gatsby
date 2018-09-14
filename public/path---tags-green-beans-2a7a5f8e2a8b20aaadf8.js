@@ -1,2 +1,0 @@
-webpackJsonp([0x6d118f7b49ba],{330:function(t,e){t.exports={data:{site:{siteMetadata:{title:"Gatsby + Netlify CMS Starter"}},allMarkdownRemark:{totalCount:2,edges:[{node:{fields:{slug:"/blog/non-woven/"},frontmatter:{title:"Paper & Non Woven Bags"}}},{node:{fields:{slug:"/blog/signage-printing/"},frontmatter:{title:"Signage Printing"}}}]}},pathContext:{tag:"green beans"}}}});
-//# sourceMappingURL=path---tags-green-beans-2a7a5f8e2a8b20aaadf8.js.map

@@ -1,2 +1,0 @@
-webpackJsonp([49978712923209],{331:function(t,e){t.exports={data:{site:{siteMetadata:{title:"Gatsby + Netlify CMS Starter"}},allMarkdownRemark:{totalCount:2,edges:[{node:{fields:{slug:"/blog/non-woven/"},frontmatter:{title:"Paper & Non Woven Bags"}}},{node:{fields:{slug:"/blog/signage-printing/"},frontmatter:{title:"Signage Printing"}}}]}},pathContext:{tag:"jamaica"}}}});
-//# sourceMappingURL=path---tags-jamaica-9c326365e8db924f04cd.js.map
