@@ -1,0 +1,2 @@
+webpackJsonp([31226404763212],{327:function(t,a){t.exports={data:{site:{siteMetadata:{title:"Gatsby + Netlify CMS Starter"}},allMarkdownRemark:{totalCount:1,edges:[{node:{fields:{slug:"/blog/digital-printing/"},frontmatter:{title:"Digital Printing"}}}]}},pathContext:{tag:"brewing"}}}});
+//# sourceMappingURL=path---tags-brewing-8374299e763f64c7091f.js.map

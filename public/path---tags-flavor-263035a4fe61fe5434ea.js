@@ -1,0 +1,2 @@
+webpackJsonp([0xb0dda74ca179],{329:function(t,e){t.exports={data:{site:{siteMetadata:{title:"Gatsby + Netlify CMS Starter"}},allMarkdownRemark:{totalCount:3,edges:[{node:{fields:{slug:"/blog/non-woven/"},frontmatter:{title:"Paper & Non Woven Bags"}}},{node:{fields:{slug:"/blog/signage-printing/"},frontmatter:{title:"Signage Printing"}}},{node:{fields:{slug:"/blog/offset-printing/"},frontmatter:{title:"Offset Printing"}}}]}},pathContext:{tag:"flavor"}}}});
+//# sourceMappingURL=path---tags-flavor-263035a4fe61fe5434ea.js.map
