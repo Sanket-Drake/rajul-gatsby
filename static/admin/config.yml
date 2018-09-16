@@ -5,6 +5,8 @@ backend:
 media_folder: static/img
 public_folder: /img
 
+publish_mode: editorial_workflow
+
 collections:
   - name: "blog"
     label: "Blog"
@@ -16,7 +18,11 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
+      - {label: "Path URL for product page", name: "path", widget: "string", required: true}
+      - {label: "This appears in products grid", name: "short-bio", widget: "text"}
+      - {label: "Does this appear on the landing page?", name: "feature", widget: "boolean"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Profile Picture (Select from uploaded image)", name: "serviceIcon", widget: "image"}
       - {label: "Tags", name: "tags", widget: "list"}
 
   - name: "pages"
