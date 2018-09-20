@@ -1,20 +1,22 @@
 ---
 templateKey: blog-post
 title: Digital Printing
-date: 2017-01-04T15:04:10.000Z
+date: '2017-01-05T20:34:10+05:30'
+description: >-
+  Brewing with a Chemex probably seems like a complicated, time-consuming
+  ordeal, but once you get used to the process, it becomes a soothing ritual
+  that's worth the effort every time.
 path: cosmetic-dentistry
-description: Brewing with a Chemex probably seems like a complicated, time-consuming ordeal, but once you get used to the process, it becomes a soothing ritual that's worth the effort every time.
-feature: true
-tags:
-  - brewing
-  - chemex
 short-bio: >-
   We offer in-office tooth whitening with a prescription strength whitening
   agent that is both safe and effective. Whitening trays are also avaialbe to
   whiten your teeth in the comfort of your own home. Porcelain veneers are a
   great option for masking chipped, discolored, or slightly misaligned teeth.
+feature: true
 serviceIcon: /img/offset-printing.jpg
-order: 1
+tags:
+  - brewing
+  - chemex
 ---
 
 ![chemex](/img/chemex.jpg)
