@@ -1,26 +1,23 @@
 ---
-templateKey: 'blog-post'
+templateKey: blog-post
 title: Paper & Non Woven Bags
-date: 2017-01-04T15:04:10.000Z
-path: cosmetic-dentistry
+date: '2017-01-03T20:34:10+05:30'
 description: >-
-  We’re proud to announce that
-  we’ll be offering a small batch
-  of Jamaica Blue Mountain coffee
-  beans in our store next week.
-feature: true  
-tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
+  Mountain coffee beans in our store next week.
+path: cosmetic-dentistry
 short-bio: >-
   We offer in-office tooth whitening with a prescription strength whitening
   agent that is both safe and effective. Whitening trays are also avaialbe to
   whiten your teeth in the comfort of your own home. Porcelain veneers are a
   great option for masking chipped, discolored, or slightly misaligned teeth.
+feature: true
 serviceIcon: /img/offset-printing.jpg
-order: 1
+tags:
+  - jamaica
+  - green beans
+  - flavor
+  - tasting
 ---
 
 We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.
