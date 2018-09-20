@@ -44,7 +44,9 @@ export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: blogs } = data.blogs;
-    console.log(blogs);
+    const { edges: about } = data.about;
+    const aboutData = about[0].node.frontmatter;
+    console.log(aboutData);
     return (
       <div className="home-page">
         <div className="home-banner" ref="UniqueElementIdentifier">
@@ -71,30 +73,13 @@ export default class IndexPage extends React.Component {
 
         <div className="home-philosophy" ref="aboutIdentifier">
           <div className="container">
-            <h2>About us</h2>
-            <h3>Know us a little better</h3>
+            <h2>{aboutData.title}</h2>
+            <h3>{aboutData.subtitle}</h3>
             <div className="columns">
               <div className="column is-4">
-                <p>
-                  We have been helping businesses to attract more customers for
-                  over a decade. Specializing in printing, graphic design, and
-                  website development, we offer a wide variety of services to
-                  help companies promote themselves, in one place. Delivered
-                  with personal guidance and support you can rely on. Achieving
-                  quality results, every time. Our in-house team is made up of
-                  friendly and talented designers, website developers, and print
-                  professionals. Together, we have all the expertise, experience
-                  and knowledge to provide you with outstanding service that is
-                  of the highest quality.
-                </p>
+                <p>{aboutData.description1}</p>
                 <div className="column" />
-
-                <p>
-                  We specialize in designing and developing all types of
-                  marketing materials like corporate profiles, brochures,
-                  newsletters, flyers, insertions, annual reports, leaflets,
-                  posters, direct mailers, hoardings… the list is endless.
-                </p>
+                <p>{aboutData.description2}</p>
               </div>
               <div className="column is-8">
                 <img src={backdrop} alt="Whizkids teacher" />
@@ -111,8 +96,8 @@ export default class IndexPage extends React.Component {
               today is approximately a twenty billion dollar business.
             </h4>
             <div className="columns standout-chuks">
-              {blogs.map(({ node: blog }) => (
-                <div className="column standout-chunk">
+              {blogs.map(({ node: blog }, index) => (
+                <div className="column standout-chunk" key={index}>
                   <div className="standout-illustrator">
                     <img
                       src={blog.frontmatter.serviceIcon}
@@ -166,6 +151,20 @@ IndexPage.propTypes = {
 
 export const pageQuery = graphql`
   query IndexQuery {
+    about: allMarkdownRemark(
+      filter: { frontmatter: { templateKey: { eq: "about-page" } } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            subtitle
+            description1
+            description2
+          }
+        }
+      }
+    }
     blogs: allMarkdownRemark(
       sort: { order: ASC, fields: [frontmatter___order] }
       filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
