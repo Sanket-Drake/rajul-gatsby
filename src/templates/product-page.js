@@ -129,7 +129,7 @@ export const ProductPageTemplate = ({
                   </a>
                 </div>
               </div>
-              <div className="product-advantages" ref="UniqueElementIdentifier">
+              <div className="product-advantages">
                 <div className="container">
                   <h2>Advantages</h2>
                   <h3>
