@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 import "./all.scss";
 import "./new.scss";
 
-const TemplateWrapper = ({ children }) => {
+const TemplateWrapper = ({ children, location }) => {
   const pathName = location.pathname.substr(1)
     ? location.pathname.substr(1) + "-wrapper"
     : "home-wrapper";
