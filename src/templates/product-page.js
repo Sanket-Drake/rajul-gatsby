@@ -14,7 +14,8 @@ export const ProductPageTemplate = ({
   main,
   testimonials,
   fullImage,
-  pricing
+  pricing,
+  edges
 }) => (
   <section className=" section--gradient">
     <div className="container">
@@ -22,192 +23,32 @@ export const ProductPageTemplate = ({
         <div className="content">
           <div className="stand-out">
             <div className="container">
-              <h2>Products{title}</h2>
+              <h2>Products</h2>
               <h4>
                 Having used discount toner cartridges for twenty years, there
                 have been a lot of changes in the toner cartridge market. The
                 market today is approximately a twenty billion dollar business.
               </h4>
+
               <div className="columns standout-chuks">
-                <div className="column standout-chunk">
-                  <div className="standout-illustrator">
-                    <img src={backdrop} alt="Whizkids teacher" />
+                {edges.map(({ node: blog }, index) => (
+                  <div className="column standout-chunk" key={index}>
+                    <div className="standout-illustrator">
+                      <img
+                        src={blog.frontmatter.serviceIcon}
+                        alt="Whizkids teacher"
+                      />
+                    </div>
+                    <h3>{blog.frontmatter.title}</h3>
+                    <div>{blog.frontmatter.description}</div>
+                    <a
+                      className="button is-rounded primary-button"
+                      href={blog.fields.slug}
+                    >
+                      EXPLORE
+                    </a>
                   </div>
-
-                  <h3>Teachers</h3>
-                  <ul>
-                    <li>Love for working with children</li>
-                    <li>Classroom management</li>
-                    <li>Love for their work</li>
-                    <li>Energetic person</li>
-                  </ul>
-                  <a className="button is-rounded primary-button" href="#">
-                    EXPLORE
-                  </a>
-                </div>
-                <div className="column standout-chunk">
-                  <div className="standout-illustrator">
-                    <img src={backdrop} alt="Whizkids teacher" />
-                  </div>
-
-                  <h3>Mission & Philosophy</h3>
-                  <ul>
-                    <li>We care about others</li>
-                    <li>We work as a team</li>
-                    <li>Active and curious learners</li>
-                    <li>Creative thinkers</li>
-                  </ul>
-                  <a className="button is-rounded primary-button" href="#">
-                    EXPLORE
-                  </a>
-                </div>
-                <div className="column standout-chunk">
-                  <div className="standout-illustrator">
-                    <img src={backdrop} alt="Whizkids teacher" />
-                  </div>
-
-                  <h3>Facilities</h3>
-                  <ul>
-                    <li>Eco Friendly Enviornment</li>
-                    <li>Large play area</li>
-                    <li>Natural light throughout</li>
-                    <li>Easy access to sports facilities</li>
-                  </ul>
-                  <a className="button is-rounded primary-button" href="#">
-                    EXPLORE
-                  </a>
-                </div>
-                <div className="column standout-chunk">
-                  <div className="standout-illustrator">
-                    <img src={backdrop} alt="Whizkids teacher" />
-                  </div>
-
-                  <h3>Safety & Security</h3>
-                  <ul>
-                    <li>Only authorized staff and families can enter</li>
-                    <li>People with photo ID can pick-up your child</li>
-                    <li>Safe area so that children can play safely</li>
-                    <li>Smoke detectors and fire extinguishers</li>
-                  </ul>
-                  <a className="button is-rounded primary-button" href="#">
-                    EXPLORE
-                  </a>
-                </div>
-              </div>
-              <a className="button is-rounded primary-button" href="#">
-                EXPLORE
-              </a>
-              <div className="stand-out">
-                <div className="container">
-                  <h2>Portfolio</h2>
-                  <div className="columns">
-                    <div className="column is-4">
-                      <img src={backdrop} alt="Whizkids teacher" />
-                    </div>
-                    <div className="column is-4">
-                      <img src={backdrop} alt="Whizkids teacher" />
-                    </div>
-                    <div className="column is-4">
-                      <img src={backdrop} alt="Whizkids teacher" />
-                    </div>
-                  </div>
-
-                  <div className="columns">
-                    <div className="column is-4">
-                      <img src={backdrop} alt="Whizkids teacher" />
-                    </div>
-                    <div className="column is-4">
-                      <img src={backdrop} alt="Whizkids teacher" />
-                    </div>
-                    <div className="column is-4">
-                      <img src={backdrop} alt="Whizkids teacher" />
-                    </div>
-                  </div>
-                  <div className="columns standout-chuks" />
-                  <a className="button is-rounded primary-button" href="#">
-                    Get in touch
-                  </a>
-                </div>
-              </div>
-              <div className="product-advantages">
-                <div className="container">
-                  <h2>Advantages</h2>
-                  <h3>
-                    One more thing! Any time we start something new it is
-                    exciting and we are very motivated and committed.
-                  </h3>
-                  <div className="columns">
-                    <div className="column is-4">
-                      <div className="card">
-                        <h3>Fast Delivery </h3>
-                        <img
-                          src={backdrop}
-                          alt="Whizkids teacher"
-                          style={{ height: "50px", margin: 20 }}
-                        />
-                        <div className="content">
-                          <p>YOUR DATA IS PROTECTED</p>
-                          <p>
-                            No matter how far along you are in your
-                            sophistication as an amateur astronomer…
-                          </p>
-                        </div>
-                        <a
-                          className="button is-rounded primary-button"
-                          href="#"
-                        >
-                          FIND MORE
-                        </a>
-                      </div>
-                    </div>
-                    <div className="column is-4">
-                      <div className="card">
-                        <h3>Fast Delivery </h3>
-                        <img
-                          src={backdrop}
-                          alt="Whizkids teacher"
-                          style={{ height: "50px", margin: 20 }}
-                        />
-                        <div className="content">
-                          <p>YOUR DATA IS PROTECTED</p>
-                          <p>
-                            No matter how far along you are in your
-                            sophistication as an amateur astronomer…
-                          </p>
-                        </div>
-                        <a
-                          className="button is-rounded primary-button"
-                          href="#"
-                        >
-                          FIND MORE
-                        </a>
-                      </div>
-                    </div>
-                    <div className="column is-4">
-                      <div className="card">
-                        <h3>Fast Delivery </h3>
-                        <img
-                          src={backdrop}
-                          alt="Whizkids teacher"
-                          style={{ height: "50px", margin: 20 }}
-                        />
-                        <div className="content">
-                          <p>YOUR DATA IS PROTECTED</p>
-                          <p>
-                            No matter how far along you are in your
-                            sophistication as an amateur astronomer…
-                          </p>
-                        </div>
-                        <a
-                          className="button is-rounded primary-button"
-                          href="#"
-                        >
-                          FIND MORE
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
@@ -242,7 +83,8 @@ ProductPageTemplate.propTypes = {
 };
 
 const ProductPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark;
+  const { frontmatter } = data.product;
+  const { edges } = data.blogs;
 
   return (
     <ProductPageTemplate
@@ -255,6 +97,7 @@ const ProductPage = ({ data }) => {
       testimonials={frontmatter.testimonials}
       fullImage={frontmatter.full_image}
       pricing={frontmatter.pricing}
+      edges={edges}
     />
   );
 };
@@ -271,7 +114,7 @@ export default ProductPage;
 
 export const productPageQuery = graphql`
   query ProductPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+    product: markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
         image
@@ -315,6 +158,28 @@ export const productPageQuery = graphql`
             plan
             price
           }
+        }
+      }
+    }
+    blogs: allMarkdownRemark(
+      sort: { order: ASC, fields: [frontmatter___order] }
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+    ) {
+      edges {
+        node {
+          excerpt(pruneLength: 300)
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            description
+            serviceIcon
+            templateKey
+            date(formatString: "MMMM DD, YYYY")
+          }
+          html
         }
       }
     }
