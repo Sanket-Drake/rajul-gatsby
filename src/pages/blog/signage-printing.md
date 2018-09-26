@@ -19,7 +19,18 @@ shortBio: >-
   great option for masking chipped, discolored, or slightly misaligned teeth.
 serviceIcon: /img/offset-printing.jpg
 order: 1
-portfolioImage:
+portfolioImage1:
+  - image: /img/offset-printing.jpg
+    text: Alt
+  - image: /img/offset-printing.jpg
+    text: Alt
+  - image: /img/offset-printing.jpg
+    text: Alt
+portfolioImage2:
+  - image: /img/offset-printing.jpg
+    text: Alt
+  - image: /img/offset-printing.jpg
+    text: Alt
   - image: /img/offset-printing.jpg
     text: Alt
 ---
