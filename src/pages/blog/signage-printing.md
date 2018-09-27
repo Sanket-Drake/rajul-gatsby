@@ -1,38 +1,37 @@
 ---
-templateKey: 'blog-post'
-title: Signage Printing
+templateKey: blog-post
+title: Signage Printing..
 date: 2017-01-04T15:04:10.000Z
-path: cosmetic-dentistry
 description: >-
   We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
   Mountain coffee beans in our store next week.
-feature: true  
-tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+path: cosmetic-dentistry
 shortBio: >-
   We offer in-office tooth whitening with a prescription strength whitening
   agent that is both safe and effective. Whitening trays are also avaialbe to
   whiten your teeth in the comfort of your own home. Porcelain veneers are a
   great option for masking chipped, discolored, or slightly misaligned teeth.
-serviceIcon: /img/offset-printing.jpg
-order: 1
+feature: true
+serviceIcon: /img/coffee.png
 portfolioImage1:
-  - image: /img/offset-printing.jpg
+  - image: /img/products-full-width.jpg
     text: Alt
-  - image: /img/offset-printing.jpg
+  - image: /img/products-grid3.jpg
     text: Alt
-  - image: /img/offset-printing.jpg
+  - image: /img/products-grid1.jpg
     text: Alt
 portfolioImage2:
-  - image: /img/offset-printing.jpg
+  - image: /img/chemex.jpg
     text: Alt
-  - image: /img/offset-printing.jpg
+  - image: /img/jumbotron.jpg
     text: Alt
-  - image: /img/offset-printing.jpg
+  - image: /img/meeting-space.png
     text: Alt
+tags:
+  - jamaica
+  - green beans
+  - flavor
+  - tasting
 ---
 
 We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.
