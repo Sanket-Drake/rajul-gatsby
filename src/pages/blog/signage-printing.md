@@ -14,18 +14,18 @@ shortBio: >-
 feature: true
 serviceIcon: /img/coffee.png
 portfolioImage1:
-  - image: /img/offset-printing.jpg
+  - image: /img/products-full-width.jpg
     text: Alt
-  - image: /img/offset-printing.jpg
+  - image: /img/products-grid3.jpg
     text: Alt
-  - image: /img/offset-printing.jpg
+  - image: /img/products-grid1.jpg
     text: Alt
 portfolioImage2:
-  - image: /img/offset-printing.jpg
+  - image: /img/chemex.jpg
     text: Alt
-  - image: /img/offset-printing.jpg
+  - image: /img/jumbotron.jpg
     text: Alt
-  - image: /img/offset-printing.jpg
+  - image: /img/meeting-space.png
     text: Alt
 tags:
   - jamaica
