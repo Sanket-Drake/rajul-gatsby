@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 title: About us
-subtitle: Know us a little better...
+subtitle: Know us a little better
 description1: >-
   We have been helping businesses to attract more customers for over a decade.
   Specializing in printing, graphic design, and website development, we offer a
