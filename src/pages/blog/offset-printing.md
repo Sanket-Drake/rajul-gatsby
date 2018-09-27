@@ -2,19 +2,17 @@
 templateKey: blog-post
 title: Offset Printing
 date: 2016-12-17T15:04:10.000Z
+description: >-
+  The Coffee Taster’s Flavor Wheel, the official resource used by coffee
+  tasters, has been revised for the first time this year.
 path: cosmetic-dentistry
-description: The Coffee Taster’s Flavor Wheel, the official resource used by coffee tasters, has been revised for the first time this year.
-feature: true
-tags:
-  - flavor
-  - tasting
 shortBio: >-
   We offer in-office tooth whitening with a prescription strength whitening
   agent that is both safe and effective. Whitening trays are also avaialbe to
   whiten your teeth in the comfort of your own home. Porcelain veneers are a
-  great option for masking chipped, discolored, or slightly misaligned teeth.
+  great option for masking chipped, discolored, or slightly misaligned teeth..
+feature: true
 serviceIcon: /img/offset-printing.jpg
-order: 1
 portfolioImage1:
   - image: /img/offset-printing.jpg
     text: Alt
@@ -29,6 +27,9 @@ portfolioImage2:
     text: Alt
   - image: /img/offset-printing.jpg
     text: Alt
+tags:
+  - flavor
+  - tasting
 ---
 
 ![flavor wheel](/img/flavor_wheel.jpg)
