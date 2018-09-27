@@ -4,6 +4,12 @@ import PropTypes from "prop-types";
 import Link from "gatsby-link";
 import backdrop from "../img/offset-printing.jpg";
 
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
+
 export default class IndexPage extends React.Component {
   state = { offset: 0 };
 
