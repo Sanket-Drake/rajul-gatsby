@@ -28,6 +28,29 @@ export const ProductPageTemplate = ({
                 have been a lot of changes in the toner cartridge market. The
                 market today is approximately a twenty billion dollar business.
               </h4>
+              <div className="columns">
+                <div className="column is-4">
+                  <img src={backdrop} alt="Whizkids teacher" />
+                </div>
+                <div className="column is-4">
+                  <img src={backdrop} alt="Whizkids teacher" />
+                </div>
+                <div className="column is-4">
+                  <img src={backdrop} alt="Whizkids teacher" />
+                </div>
+              </div>
+
+              <div className="columns">
+                <div className="column is-4">
+                  <img src={backdrop} alt="Whizkids teacher" />
+                </div>
+                <div className="column is-4">
+                  <img src={backdrop} alt="Whizkids teacher" />
+                </div>
+                <div className="column is-4">
+                  <img src={backdrop} alt="Whizkids teacher" />
+                </div>
+              </div>
             </div>
           </div>
         </div>

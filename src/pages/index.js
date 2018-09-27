@@ -41,6 +41,25 @@ export default class IndexPage extends React.Component {
     console.log(this.state.offset);
   };
 
+  handleChange = e => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
+
+  handleSubmit = e => {
+    e.preventDefault();
+    const form = e.target;
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...this.state
+      })
+    })
+      .then(() => navigateTo(form.getAttribute("action")))
+      .catch(error => alert(error));
+  };
+
   render() {
     const { data } = this.props;
     const { edges: blogs } = data.blogs;
@@ -134,6 +153,74 @@ export default class IndexPage extends React.Component {
             {/* <a className="button is-rounded secondary-button" href="#">
           View All
         </a> */}
+          </div>
+        </div>
+        <div className="contact-form">
+          <div className="container">
+            <div className="columns">
+              <div className="column is-three-fifths is-offset-one-fifth">
+                <h2>Talk to Us</h2>
+                <form
+                  name="contact"
+                  method="POST"
+                  action="/thanks/"
+                  data-netlify="true"
+                  data-netlify-honeypot="bot-field"
+                  onSubmit={this.handleSubmit}
+                >
+                  <div className="form-group">
+                    <label htmlFor="">Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      onChange={this.handleChange}
+                      required
+                    />
+                  </div>
+                  <div className="form-group columns">
+                    <div className="column">
+                      <label htmlFor="">Email</label>
+                      <input
+                        type="email"
+                        name="email"
+                        onChange={this.handleChange}
+                        required
+                      />
+                    </div>
+                    <div className="column">
+                      <label htmlFor="">Phone Number</label>
+                      <input
+                        type="text"
+                        name="phone"
+                        onChange={this.handleChange}
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="">Message</label>
+                    <textarea
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="5"
+                      name="message"
+                      onChange={this.handleChange}
+                      required
+                    />
+                  </div>
+                  <div className="button-container">
+                    <button
+                      className="button is-rounded secondary-button"
+                      href="#"
+                      type="submit"
+                    >
+                      Send
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>

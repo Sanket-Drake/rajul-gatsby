@@ -23,9 +23,9 @@ collections:
       - {label: "Does this appear on the landing page?", name: "feature", widget: "boolean"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Profile Picture (Select from uploaded image)", name: "serviceIcon", widget: "image"}
-      - {label: "Tags", name: "tags", widget: "list"}
       - {label: Portfolio Images(first 3), name: portfolioImage1, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: string}]}
       - {label: Portfolio Images(last 3), name: portfolioImage2, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: string}]}
+      - {label: "Tags", name: "tags", widget: "list"}
 
   - name: "pages"
     label: "Pages"
